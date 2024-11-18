@@ -2,175 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 
 <body>
-    <!-- Header with Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#classes">Classes</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#movies">Movies</a></li>
-                <li><a href="#games">Games</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my projects, classes, and more!</p>
-        </section>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Movies</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="card-container">
-                <!-- Example Project Cards -->
-                <div class="card">
-                    <img src="https://placehold.co/325x200" alt="Project Image">
-                    <div class="card-content">
-                        <h3>Project 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolore aliquam doloribus...</p>
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-                <!-- Add more cards as needed -->
-            </div>
-        </section>
+  <div class="hero-section content">
+    <div class="information">
+      <h1>Hi, I'm John Doe</h1>
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem aliquam repudiandae aperiam soluta modi vitae
+        possimus adipisci veritatis, officiis rerum iste animi sequi sint commodi quo nobis mollitia, officia odio?
+      </h2>
+      <a href="#" class="read-more-button">
+        Read more
+      </a>
+    </div>
+    <div class="image-wrapper">
+      <img src="images/wild-robot.png" alt="">
+    </div>
+  </div>
 
-        <!-- Classes Section -->
-        <section id="classes">
-            <h2>Classes</h2>
-            <div class="card-container">
-                <!-- Individual Class Cards -->
-                <div class="card">
-                    <div class="card-content">
-                        <h3>HTML & CSS</h3>
-                        <p>Building the basics of the web: structure and styling for modern web pages.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>English</h3>
-                        <p>Mastering language skills for clear communication and creative writing.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Dutch</h3>
-                        <p>Exploring Dutch language and culture for international communication.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Math</h3>
-                        <p>From algebra to calculus, sharpening analytical and problem-solving skills.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Data Communications</h3>
-                        <p>Understanding network protocols and data transfer for connected systems.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm [Your Name], a passionate web developer with a love for creating visually appealing and user-friendly websites. In my free time, I enjoy reading, gaming, and exploring new technologies.</p>
-                    <p>I've studied various web technologies and am continuously learning to keep up with the latest trends in design and development.</p>
-                </div>
-                <img src="https://placehold.co/200x200" alt="About Me Image">
-            </div>
-        </section>
-
-        <!-- Movies Section -->
-        <section id="movies">
-            <h2>Movies</h2>
-            <div class="card-container">
-                <!-- Movie Cards with Links -->
-                <div class="card">
-                    <img src="https://placehold.co/325x200" alt="Fight Club">
-                    <div class="card-content">
-                        <h3>Fight Club</h3>
-                        <p>A gritty look at masculinity, identity, and society's flaws.</p>
-                        <a href="https://www.imdb.com/title/tt0137523/" target="_blank" class="btn">View on IMDb</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://placehold.co/325x200" alt="The Wild Robot">
-                    <div class="card-content">
-                        <h3>The Wild Robot</h3>
-                        <p>An exploration of nature, technology, and companionship in a unique world.</p>
-                        <a href="https://www.imdb.com/" target="_blank" class="btn">View on IMDb</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://placehold.co/325x200" alt="Inception">
-                    <div class="card-content">
-                        <h3>Inception</h3>
-                        <p>A mind-bending thriller that explores the nature of dreams and reality.</p>
-                        <a href="https://www.imdb.com/title/tt1375666/" target="_blank" class="btn">View on IMDb</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Games Section -->
-        <section id="games">
-            <h2>Games</h2>
-            <div class="card-container">
-                <!-- Game Cards with Images and Descriptions -->
-                <div class="card">
-                    <img src="https://placehold.co/325x200" alt="Call of Duty">
-                    <div class="card-content">
-                        <h3>Call of Duty</h3>
-                        <p>An intense first-person shooter game known for its realism and action-packed campaigns.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://placehold.co/325x200" alt="Deadlock">
-                    <div class="card-content">
-                        <h3>Deadlock</h3>
-                        <p>A strategy game that requires quick thinking and precision under pressure.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://placehold.co/325x200" alt="Team Fortress 2">
-                    <div class="card-content">
-                        <h3>Team Fortress 2</h3>
-                        <p>A multiplayer shooter with unique characters and a sense of humor.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer with Social Links -->
-    <footer>
-        <p>Connect with me on social media:</p>
-        <ul>
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://github.com" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:email@example.com">Email</a></li>
-        </ul>
-        <p>© 2023 [Your Company Name]. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
