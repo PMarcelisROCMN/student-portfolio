@@ -1,186 +1,100 @@
-/* General Reset */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Dark Mode Body with Blurry Background */
 body {
-    background-color: #121212;
-    color: #f5f5f5;
-    line-height: 1.6;
-    position: relative;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    width: 400px;
-    height: 400px;
-    background-color: rgba(255, 0, 150, 0.3);
-    border-radius: 50%;
-    filter: blur(150px);
-    z-index: -1;
-}
-
-body::after {
-    content: '';
-    position: absolute;
-    bottom: 10%;
-    right: 20%;
-    width: 300px;
-    height: 300px;
-    background-color: rgba(0, 150, 255, 0.3);
-    border-radius: 50%;
-    filter: blur(150px);
-    z-index: -5;
-}
-
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
+    background-color: black;
 }
 
 /* Header */
+
+.content {
+    margin: 0 auto;
+    max-width: 1300px;
+    justify-content: center;
+}
+
 header {
-    background-color: #1f1f1f;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    margin: 0 auto;
+    max-width: 1500px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    list-style-type: none;
+    padding: 25px
 }
 
-nav ul li a {
-    color: #f5f5f5;
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #9C9C9C;
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 15px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: color 0.5s;
 }
 
-nav ul li a:hover {
-    background-color: #333333;
-    border-radius: 5px;
+header nav ul li a:hover {
+    color: #ffffff;
 }
 
-/* Section Styles */
-section {
-    padding: 60px 20px;
+header nav {
+    background-color: #1B1B1B;
     text-align: center;
-    border-bottom: 1px solid #333333;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-h1, h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-/* About Section Layout */
-.about-content {
+.hero-section {
+    /* background-color: #1B1B1B; */
     display: flex;
+    gap: 50px;
     align-items: center;
-    gap: 20px;
-    text-align: left;
-    justify-content: center;
 }
 
-.about-text {
-    max-width: 500px;
+
+/* Hero section */
+.information {
+    align-content: center;
+    max-width: 50%;
+    height: 80vh;
 }
 
-/* Card Container */
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.image-wrapper {
+    width: 500px;
 }
 
-/* Card Styling */
-.card {
-    width: 325px;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.card img {
+.image-wrapper img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
-.card-content {
-    padding: 20px;
+.information h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.card-content h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #f5f5f5;
-    margin-bottom: 10px;
+.information h2 {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 24px 0;
 }
 
-.card-content p {
-    font-size: 16px;
-    color: #d1d1d1;
-    margin-bottom: 20px;
-}
-
-.card-content .btn {
+.information .read-more-button {
+    background-color: #525252;
+    color: #000000;
     padding: 10px 20px;
-    background-color: #333333;
-    color: #f5f5f5;
-    text-align: center;
-    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-}
-
-.card-content .btn:hover {
-    background-color: #555555;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #1f1f1f;
-    color: #d1d1d1;
-    padding: 20px;
-    text-align: center;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer ul li a {
-    color: #f5f5f5;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    margin-top: 10px;
-    font-size: 14px;
+    border-radius: 20px;
 }
