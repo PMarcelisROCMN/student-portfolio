@@ -98,6 +98,7 @@ body {
 }
 
 .icon-container img {
+    border-radius: 10px;
     max-width: 200px;
     height: auto;
 }
